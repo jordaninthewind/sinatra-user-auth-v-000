@@ -27,7 +27,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/sessions' do
-    binding.pry
+
     redirect '/users/home'
   end
 
@@ -37,7 +37,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/users/home' do
-
+    binding.pry
     erb :'/users/home'
   end
 
